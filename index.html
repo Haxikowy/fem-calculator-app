@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/media-queries.css">
   <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="container theme-first">
+    <header>
+      <div class="title">
+        <h1>calc</h1>
+      </div>
+      <div class="themeselector-container">
+        <p class="themeselector-text">theme</p>
+        <div class="themeselector">
+          <input type="radio" id="th-radio1" name="radios" value="firstTheme" checked>
+          <label for="th-radio1" data-text="1"></label>
 
+          <input type="radio" id="th-radio2" name="radios" value="secondTheme">
+          <label for="th-radio2" data-text="2"></label>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <input type="radio" id="th-radio3" name="radios" value="thirdTheme">
+          <label for="th-radio3" data-text="3"></label>
+          <div class="themeselector-dot"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="calc-screen">
+        <div class="calc-input">399,981</div>
+      </div>
+
+      <div class="calc-keyboard">
+        <!-- first row -->
+        <button class="btn" value="7">7</button>
+        <button class="btn" value="8">8</button>
+        <button class="btn" value="9">9</button>
+        <button class="btn func-btn" value="del">del</button>
+
+        <!-- second row -->
+        <button class="btn" value="4">4</button>
+        <button class="btn" value="5">5</button>
+        <button class="btn" value="6">6</button>
+        <button class="btn" value="+">+</button>
+
+        <!-- third row -->
+        <button class="btn" value="1">1</button>
+        <button class="btn" value="2">2</button>
+        <button class="btn" value="3">3</button>
+        <button class="btn" value="-">-</button>
+
+        <!-- fourth row  -->
+        <button class="btn" value=",">.</button>
+        <button class="btn" value="0">0</button>
+        <button class="btn" value="/">/</button>
+        <button class="btn" value="*">x</button>
+
+        <!-- fifth row -->
+        <button class="btn func-btn" value="reset">reset</button>
+        <button class="btn hlighted" value="=">=</button>
+      </div>
+    </main>
+
+    <!-- <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Szymon Dolnik</a>.
+    </footer> -->
   </div>
-</body>
+
 </html>

@@ -1,0 +1,62 @@
+.theme-first {
+  /* bg colors */
+  --main-bg: hsl(222, 26%, 31%);
+  --secondary-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  /* keys colors */
+  --fkey-bg: hsl(225, 21%, 49%);
+  --fkey-bgshadow: hsl(224, 28%, 35%);
+
+  --hlighted-bg: hsl(6, 63%, 50%);
+  --hlighted-bgshadow: hsl(6, 70%, 34%);
+
+  --key-bg: hsl(30, 25%, 89%);
+  --key-bgshadow: hsl(28, 16%, 65%);
+
+  /* text */
+  --main-text: hsl(221, 14%, 31%);
+  --white-text: hsl(360, 100%, 100%);
+}
+
+.theme-second {
+  /* bg colors */
+  --main-bg: hsl(0, 0%, 90%);
+  --secondary-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  /* keys colors */
+  --fkey-bg: hsl(185, 42%, 37%);
+  --fkey-bgshadow: hsl(185, 58%, 25%);
+
+  --hlighted-bg: hsl(25, 98%, 40%);
+  --hlighted-bgshadow: hsl(25, 99%, 27%);
+
+  --key-bg: hsl(45, 7%, 89%);
+  --key-bgshadow: hsl(35, 11%, 61%);
+
+  /* text */
+  --main-text: hsl(60, 10%, 19%);
+  --white-text: hsl(360, 100%, 100%);
+}
+
+.theme-third {
+  /* bg colors */
+  --main-bg: hsl(268, 75%, 9%);
+  --secondary-bg: hsl(268, 71%, 12%);
+
+  /* keys colors */
+  --fkey-bg: hsl(281, 89%, 26%);
+  --fkey-bgshadow: hsl(285, 91%, 52%);
+
+  --hlighted-bg: hsl(176, 100%, 44%);
+  --hlighted-bgshadow: hsl(177, 92%, 70%);
+
+  --key-bg: hsl(268, 47%, 21%);
+  --key-bgshadow: hsl(290, 70%, 36%);
+
+  /* text */
+  --main-text: hsl(52, 100%, 62%);
+  --secondary-text: hsl(198, 20%, 13%);
+  --white-text: hsl(360, 100%, 100%);
+}

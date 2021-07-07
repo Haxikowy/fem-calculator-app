@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 30px 25px;
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+/* ////////////////////////////////// */
+/* ///////////// HEADER ///////////// */
+/* ////////////////////////////////// */
+
+header {
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title h1 {
+  color: var(--white-text);
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.themeselector-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--white-text)
+}
+
+.themeselector-text {
+  margin-right: 20px;
+  letter-spacing: 1px;
+  font-size: .6em;
+  text-transform: uppercase;
+
+}
+
+.themeselector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 75px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: var(--secondary-bg);
+}
+
+
+.themeselector input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.themeselector label {
+  display: block;
+  width: 25px;
+  height: 100%;
+  position: relative;
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.themeselector input+label::before {
+  content: attr(data-text);
+  position: relative;
+  display: block;
+  text-align: center;
+  top: -20px;
+  left: 0;
+  font-size: .6rem;
+}
+
+.themeselector-dot {
+  background: var(--hlighted-bg);
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  transition: transform 600ms cubic-bezier(.02, .94, .09, .97);
+  transform: translate3d(1rem, 0, 0);
+}
+
+.themeselector input#th-radio1:checked~.themeselector-dot {
+  transform: translate3d(0, 0, 0);
+}
+
+.themeselector input#th-radio2:checked~.themeselector-dot {
+  transform: translate3d(25px, 0, 0);
+}
+
+.themeselector input#th-radio3:checked~.themeselector-dot {
+  transform: translate3d(50px, 0, 0);
+}
+
+/* ////////////////////////////////// */
+/* ////////////// MAIN ////////////// */
+/* ////////////////////////////////// */
+
+main {
+  margin-top: 20px;
+}
+
+.calc-screen {
+  background-color: var(--screen-bg);
+  color: var(--white-text);
+  border-radius: 8px;
+}
+
+.calc-input {
+  padding: 20px;
+  text-align: right;
+  font-size: 1.6rem;
+}
+
+.calc-keyboard {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
