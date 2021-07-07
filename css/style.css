@@ -84,7 +84,7 @@ header {
   height: 100%;
   position: relative;
   color: var(--white-text);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .themeselector input+label::before {
