@@ -27,13 +27,13 @@ html {
 
 body{
   background-color: var(--t3-main-bg,var(--t2-main-bg, var(--main-bg)));
+  transition: color .3s ease-in-out,
+              background-color .3s ease-in-out;
 }
 
 .container {
   min-height: 100vh;
   padding: 30px 25px;  
-  transition: color .3s ease-in-out,
-              background-color .3s ease-in-out;
 }
 
 /* ////////////////////////////////// */

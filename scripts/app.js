@@ -4,6 +4,9 @@ const previousOperandElement = document.querySelector('.calc-output_prev');
 const currentOperandElement = document.querySelector('.calc-output_current');
 const calcKeyboard = document.querySelector('.calc-keyboard');
 
+
+detectMode('theme-third');
+
 themeSelector.addEventListener('change', e => {
   const theme = e.target.value;
 
