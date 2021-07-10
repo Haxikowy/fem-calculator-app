@@ -34,37 +34,40 @@
     </header>
     <main>
       <div class="calc-screen">
-        <div class="calc-input">399,981</div>
+        <div class="calc-output_prev">
+          <span class="calc-output_operation"></span>
+        </div>
+        <div class="calc-output_current"></div>
       </div>
 
       <div class="calc-keyboard">
         <!-- first row -->
-        <button class="btn" value="7">7</button>
-        <button class="btn" value="8">8</button>
-        <button class="btn" value="9">9</button>
-        <button class="btn func-btn" value="del">del</button>
+        <button class="btn" data-number>7</button>
+        <button class="btn" data-number>8</button>
+        <button class="btn" data-number>9</button>
+        <button class="btn func-btn" data-delete>del</button>
 
         <!-- second row -->
-        <button class="btn" value="4">4</button>
-        <button class="btn" value="5">5</button>
-        <button class="btn" value="6">6</button>
-        <button class="btn" value="+">+</button>
+        <button class="btn" data-number>4</button>
+        <button class="btn" data-number>5</button>
+        <button class="btn" data-number>6</button>
+        <button class="btn" data-operation>+</button>
 
         <!-- third row -->
-        <button class="btn" value="1">1</button>
-        <button class="btn" value="2">2</button>
-        <button class="btn" value="3">3</button>
-        <button class="btn" value="-">-</button>
+        <button class="btn" data-number>1</button>
+        <button class="btn" data-number>2</button>
+        <button class="btn" data-number>3</button>
+        <button class="btn" data-operation>-</button>
 
         <!-- fourth row  -->
-        <button class="btn" value=",">.</button>
-        <button class="btn" value="0">0</button>
-        <button class="btn" value="/">/</button>
-        <button class="btn" value="*">x</button>
+        <button class="btn" data-number>.</button>
+        <button class="btn" data-number>0</button>
+        <button class="btn" data-operation>/</button>
+        <button class="btn" data-operation>x</button>
 
         <!-- fifth row -->
-        <button class="btn func-btn" value="reset">reset</button>
-        <button class="btn hlighted" value="=">=</button>
+        <button class="btn func-btn" data-reset>reset</button>
+        <button class="btn hlighted" data-equals>=</button>
       </div>
     </main>
 
@@ -74,6 +77,7 @@
     </footer>
   </div>
   <script src="scripts/theme.js"></script>
+  <script src="scripts/calculate.js"></script>
   <script src="scripts/app.js"></script>
 </body>
 
