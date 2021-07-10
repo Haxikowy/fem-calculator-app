@@ -1,8 +1,4 @@
 @media (min-width: 600px){
-  body {
-    background-color: var(--t3-main-bg,var(--t2-main-bg, var(--main-bg)));
-  }
-
   html{
     font-size: 25px;
   }

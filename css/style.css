@@ -112,7 +112,7 @@ header {
   left: 3px;
   border-radius: 50%;
   transition: transform 600ms cubic-bezier(.02, .94, .09, .97);
-  transform: translate3d(1rem, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .themeselector input#th-radio1:checked~.themeselector-dot {
