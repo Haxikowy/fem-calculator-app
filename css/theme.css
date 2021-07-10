@@ -16,7 +16,7 @@
 
   /* text */
   --main-text: hsl(221, 14%, 31%);
-  --white-text: hsl(360, 100%, 100%);
+  --white-text: hsl(0, 0%, 100%);
 }
 
 .theme-second {
@@ -37,7 +37,7 @@
 
   /* text */
   --main-text: hsl(60, 10%, 19%);
-  --white-text: hsl(360, 100%, 100%);
+  --white-text: hsl(0, 0%, 100%);
 }
 
 .theme-third {
@@ -58,5 +58,5 @@
   /* text */
   --main-text: hsl(52, 100%, 62%);
   --secondary-text: hsl(198, 20%, 13%);
-  --white-text: hsl(360, 100%, 100%);
+  --white-text: hsl(0, 0%, 100%);
 }
