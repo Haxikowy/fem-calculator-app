@@ -25,6 +25,11 @@ class Calculator {
     this.previousOperand = this.currentOperand;
     this.currentOperand = '';
   }
+  negate() {
+    if (this.currentOperand === '' || this.currentOperand === '0') return;
+    this.i = this.currentOperand
+    this.currentOperand = this.currentOperand - (this.i * 2)
+  }
   compute() {
     let computation;
     const prev = parseFloat(this.previousOperand);

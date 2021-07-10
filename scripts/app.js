@@ -43,5 +43,9 @@ calcKeyboard.addEventListener('click', e => {
       calculator.compute();
       calculator.updateScreen();
     }
+    if (button.hasAttribute('data-negate')) {
+      calculator.negate();
+      calculator.updateScreen();
+    }
   }
 });
