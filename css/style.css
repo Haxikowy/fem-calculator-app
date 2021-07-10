@@ -25,10 +25,13 @@ html {
   font-size: 20px;
 }
 
+body{
+  background-color: var(--t3-main-bg,var(--t2-main-bg, var(--main-bg)));
+}
+
 .container {
   min-height: 100vh;
-  padding: 30px 25px;
-  background-color: var(--t3-main-bg,var(--t2-main-bg, var(--main-bg)));
+  padding: 30px 25px;  
   transition: color .3s ease-in-out,
               background-color .3s ease-in-out;
 }
