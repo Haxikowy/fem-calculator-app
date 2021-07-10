@@ -136,7 +136,7 @@ main {
 }
 
 .calc-screen {
-  min-height: 120px;
+  min-height: 125px;
   border-radius: 8px;
   background-color: var(--t3-secondary-bg,var(--t2-screen-bg,var(--screen-bg)));
   color: var(--t3-main-text,var(--t2-main-text,var(--white-text)));
