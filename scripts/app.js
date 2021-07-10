@@ -1,10 +1,9 @@
 const themeSelector = document.querySelector('.themeselector');
-
 const previousOperandElement = document.querySelector('.calc-output_prev');
 const currentOperandElement = document.querySelector('.calc-output_current');
 const calcKeyboard = document.querySelector('.calc-keyboard');
 
-
+// Theme detection & changing part
 detectMode('theme-third');
 
 themeSelector.addEventListener('change', e => {
@@ -13,6 +12,7 @@ themeSelector.addEventListener('change', e => {
   changeTheme(theme);
 });
 
+// Whole calculator feature initialization
 const calculator = new Calculator(previousOperandElement, currentOperandElement)
 
 calcKeyboard.addEventListener('click', e => {
