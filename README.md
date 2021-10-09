@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Haxikowy/fem-calculator-app)
-- Live Site URL: [Live site URL here](https://haxikowy.github.io/fem-calculator-app/)
+- [Solution](https://github.com/Haxikowy/fem-calculator-app)
+- [Live](https://haxikowy.github.io/fem-calculator-app/)
 
 ## My process
 
