@@ -28,10 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="/images/screenshot-d1.png" width="200px" /> <img src="/images/screenshot-d2.png" width="200px" /> <img src="/images/screenshot-d3.png" width="200px" />
+<img src="/images/screenshot-d1.png" width="250px" /> <img src="/images/screenshot-d2.png" width="250px" /> <img src="/images/screenshot-d3.png" width="250px" />
 
 
-<img src="/images/screenshot-m1.png" width="200px" /> <img src="/images/screenshot-m2.png" width="200px" /> <img src="/images/screenshot-m3.png" width="200px" />
+<img src="/images/screenshot-m1.png" width="250px" /> <img src="/images/screenshot-m2.png" width="250px" /> <img src="/images/screenshot-m3.png" width="250px" />
 
 ### Links
 
