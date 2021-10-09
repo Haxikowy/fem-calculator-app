@@ -26,9 +26,8 @@ class Calculator {
     this.currentOperand = '';
   }
   negate() {
-    if (this.currentOperand === '' || this.currentOperand === '0') return;
-    this.i = this.currentOperand
-    this.currentOperand = this.currentOperand - (this.i * 2)
+    if (this.currentOperand === '' || this.currentOperand === '.' || this.currentOperand === '0') return;
+    this.currentOperand = this.currentOperand - (this.currentOperand * 2)
   }
   compute() {
     let computation;

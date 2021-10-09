@@ -6,46 +6,34 @@ const calcKeyboard = document.querySelector('.calc-keyboard');
 // Theme detection & changing part
 detectMode('theme-third');
 
-themeSelector.addEventListener('change', e => {
-  const theme = e.target.value;
+// calculator obj initialization
+const calculator = new Calculator(previousOperandElement, currentOperandElement);
 
-  changeTheme(theme);
-});
 
-// Whole calculator feature initialization
-const calculator = new Calculator(previousOperandElement, currentOperandElement)
+// handle event listeners section
+const handleThemeChange = e => changeTheme(e.target.value);
 
-calcKeyboard.addEventListener('click', e => {
+const handleInput = (e) => {
   if (e.target.tagName === "BUTTON") {
     const button = e.target;
 
     if (button.hasAttribute('data-number')) {
       calculator.appendDigit(button.textContent);
-      calculator.updateScreen();
-    }
-
-    if (button.hasAttribute('data-operation')) {
+    }else if (button.hasAttribute('data-operation')) {
       calculator.chooseOperation(button.textContent);
-      calculator.updateScreen();
-    }
-
-    if (button.hasAttribute('data-reset')) {
+    }else if (button.hasAttribute('data-reset')) {
       calculator.reset();
-      calculator.updateScreen();
-    }
-
-    if (button.hasAttribute('data-delete')) {
+    }else if (button.hasAttribute('data-delete')) {
       calculator.delete();
-      calculator.updateScreen();
-    }
-
-    if (button.hasAttribute('data-equals')) {
+    }else if (button.hasAttribute('data-equals')) {
       calculator.compute();
-      calculator.updateScreen();
-    }
-    if (button.hasAttribute('data-negate')) {
+    }else if (button.hasAttribute('data-negate')) {
       calculator.negate();
-      calculator.updateScreen();
     }
+    calculator.updateScreen();
   }
-});
+}
+
+
+themeSelector.addEventListener('change', handleThemeChange);
+calcKeyboard.addEventListener('click', handleInput);
