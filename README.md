@@ -28,12 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Theme 1](/images/screenshot-d1.png)
-![Desktop Theme 2](/images/screenshot-d2.png)
-![Desktop Theme 3](/images/screenshot-d3.png)
-![Mobile Theme 1](/images/screenshot-m1.png)
-![Mobile Theme 2](/images/screenshot-m2.png)
-![Mobile Theme 3](/images/screenshot-m3.png)
+<img src="/images/screenshot-d1.png" width="200px" /> <img src="/images/screenshot-d2.png" width="200px" /> <img src="/images/screenshot-d3.png" width="200px" />
+
+
+<img src="/images/screenshot-m1.png" width="200px" /> <img src="/images/screenshot-m2.png" width="200px" /> <img src="/images/screenshot-m3.png" width="200px" />
 
 ### Links
 
